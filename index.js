@@ -1,4 +1,3 @@
-// Fade-in when scrolling
 const faders = document.querySelectorAll(".day");
 
 const appearOptions = {
@@ -18,7 +17,7 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-// Lightbox (optional, will not break if missing)
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const captionText = document.getElementById("caption");
@@ -44,7 +43,7 @@ if (lightbox && lightboxImg && captionText && closeBtn) {
   };
 }
 
-// Music controls
+
 const music = document.getElementById("bg-music");
 const playBtn = document.getElementById("play-pause");
 const volumeSlider = document.getElementById("volume-slider");
@@ -73,16 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.querySelector('.close-modal');
   const modalInstruction = document.getElementById('modal-instruction');
   const modalError = document.getElementById('modal-error');
-  const accessPopup = document.getElementById('access-popup'); // new popup element
+  const accessPopup = document.getElementById('access-popup'); 
 
   let currentCard = null;
 
-  // Function to show nice "Access Granted" popup
+ 
   function showAccessGranted() {
     accessPopup.classList.add('show');
     setTimeout(() => {
       accessPopup.classList.remove('show');
-    }, 2500); // disappears after 2.5 seconds
+    }, 2500); 
   }
 
   cards.forEach(card => {
@@ -91,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (unlockBtn) {
       unlockBtn.addEventListener('click', (e) => {
-        e.stopPropagation(); // prevent other click handlers on card
+        e.stopPropagation(); 
         currentCard = card;
         modal.style.display = 'block';
         modalInput.value = '';
@@ -102,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (modalInput.value === password) {
             card.querySelector('.flip-card-inner').classList.add('flipped');
             modal.style.display = 'none';
-            showAccessGranted(); // show nice popup instead of alert
+            showAccessGranted(); 
           } else {
             modalError.style.display = 'block';
           }
@@ -126,11 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Language toggle
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.toggle-lang-btn').forEach(button => {
     button.addEventListener('click', () => {
-      const cardBack = button.closest('.flip-card-back'); // ensure we get correct container
+      const cardBack = button.closest('.flip-card-back'); 
       const english = cardBack.querySelector('.english');
       const japanese = cardBack.querySelector('.japanese');
 

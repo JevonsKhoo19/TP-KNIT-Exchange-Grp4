@@ -1,6 +1,3 @@
-/* =========================
-   Page-specific header/footer
-   ========================= */
 body.day-page header,
 body.day-page footer {
   opacity: 1 !important;
@@ -8,7 +5,7 @@ body.day-page footer {
   animation: none !important;
 }
 
-/* Animated background - Sakura Pastel Gradient */
+
 body {
   font-family: "Poppins", "Noto Sans JP", sans-serif;
   margin: 0;
@@ -21,7 +18,7 @@ body {
   position: relative;
 }
 
-/* Sakura petals floating */
+
 body::before {
   content: "🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸";
   position: absolute;
@@ -46,7 +43,7 @@ body::before {
   100% { background-position: 0% 50%; }
 }
 
-/* Intro Splash */
+
 #intro {
   position: fixed;
   top: 0; left: 0;
@@ -75,7 +72,7 @@ body::before {
   animation: fadeIn 2s ease;
 }
 
-/* Header */
+
 header {
   text-align: center;
   background: rgba(255, 182, 193, 0.85);
@@ -102,7 +99,7 @@ header p {
   font-family: "Poppins", "Noto Sans JP", sans-serif;
 }
 
-/* Timeline */
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -123,14 +120,14 @@ header p {
   z-index: -1;
 }
 
-/* Day cards alternate */
+
 .day {
   width: 80%;
   max-width: 750px;
   margin: 60px 0;
-  background: #fff0f5; /* subtle sakura background */
+  background: #fff0f5; 
   border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(255,182,193,0.3); /* pinkish shadow */
+  box-shadow: 0 8px 20px rgba(255,182,193,0.3); 
   padding: 25px;
   position: relative;
   transform: translateY(30px);
@@ -153,7 +150,7 @@ header p {
   margin-right: 10%;
 }
 
-/* Decorative dot */
+
 .day::before {
   content: "";
   position: absolute;
@@ -182,7 +179,7 @@ header p {
   font-family: "Poppins", "Noto Sans JP", sans-serif;
 }
 
-/* Photos grid */
+
 .photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -205,7 +202,7 @@ header p {
   box-shadow: 0 10px 20px rgba(255,182,193,0.25);
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -220,7 +217,7 @@ footer {
   font-family: "Poppins", "Noto Sans JP", sans-serif;
 }
 
-/* Lightbox */
+
 .lightbox {
   display: none;
   position: fixed;
@@ -264,7 +261,7 @@ footer {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 18px;
-  background: #ffb6c1; /* sakura pink */
+  background: #ffb6c1;
   color: white;
   text-decoration: none;
   border-radius: 16px;
@@ -280,19 +277,17 @@ footer {
 
 
 
-/* Animations */
+
 @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
 @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
 @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 @keyframes zoomIn { from { transform: scale(0.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
-/* =========================
-   Slideshow container
-   ========================= */
+
 .slideshow-container {
   max-width: 850px;
-  height: 500px; /* fixed height for all slides */
+  height: 500px; 
   position: relative;
   margin: 40px auto;
   overflow: hidden;
@@ -304,14 +299,14 @@ footer {
   justify-content: center;
 }
 
-/* Slide wrapper for horizontal movement */
+
 .slides-wrapper {
   display: flex;
   height: 100%;
   transition: transform 0.8s ease-in-out;
 }
 
-/* Individual slides */
+
 .slide {
   min-width: 100%;
   height: 100%;
@@ -321,11 +316,11 @@ footer {
   justify-content: center;
 }
 
-/* Images: cover the slide, center cropped */
+
 .slide img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover; /* keeps aspect ratio, crops if necessary */
+  object-fit: cover; 
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(255,182,193,0.3);
   transition: transform 0.4s ease;
@@ -335,7 +330,7 @@ footer {
   transform: scale(1.03);
 }
 
-/* Prev/Next buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -359,7 +354,7 @@ footer {
   transform: translateY(-50%) scale(1.1);
 }
 
-/* Dots under slideshow */
+
 .dots {
   text-align: center;
   margin-top: 15px;
@@ -446,7 +441,7 @@ footer {
   width: 100px;
 }
 
-/* Personal notes photos */
+
 .note-photo {
   width: 100%;
   max-width: 200px;
@@ -460,14 +455,14 @@ footer {
 
 .activities {
   display: flex;
-  flex-wrap: wrap;      /* allow cards to wrap on smaller screens */
+  flex-wrap: wrap;      
   justify-content: center;
-  gap: 40px;            /* bigger gap between cards */
+  gap: 40px;            
   max-width: 1000px;
   margin: 40px auto;
 }
 
-/* Flip card container */
+
 .flip-card {
   background-color: transparent;
   width: 250px;
@@ -475,7 +470,6 @@ footer {
   perspective: 1000px;
   margin: 20px 20px;
   cursor: pointer;
-  /* overflow: hidden; */
 }
 
 .flip-card-inner {
@@ -497,7 +491,7 @@ footer {
   border-radius: 16px;
   backface-visibility: hidden;
   box-shadow: 0 8px 20px rgba(255,182,193,0.3);
-  overflow: hidden; /* prevents text going outside */
+  overflow: hidden; 
 }
 
 .flip-card-front {
@@ -533,7 +527,7 @@ footer {
 }
 
 
-/* Button styling */
+
 .toggle-lang-btn {
   margin-top: 10px;
   padding: 6px 12px;
@@ -552,7 +546,7 @@ footer {
 }
 .flip-card-back p {
     margin: 0;
-  word-break: break-word; /* prevent cutoff of long words */
+  word-break: break-word; 
 }
 
 .note-photo {
@@ -567,7 +561,7 @@ footer {
 
 
 
-/* Special Personal Notes Button */
+
 .personal-notes-btn {
   display: inline-block;
   margin: 25px auto;
@@ -637,7 +631,7 @@ footer {
   font-size: 16px;
 }
 
-/* Unlock button on the card */
+
 .unlock-btn {
   display: inline-block;
   margin-top: 10px;
@@ -654,12 +648,12 @@ footer {
 }
 
 .unlock-btn:hover {
-  background: #ff4b6a; /* slightly darker on hover */
+  background: #ff4b6a; 
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 }
 
-/* Modal submit button */
+
 #modal-submit {
   padding: 10px 20px;
   font-size: 1rem;
@@ -674,12 +668,12 @@ footer {
 }
 
 #modal-submit:hover {
-  background: #45a049; /* darker green on hover */
+  background: #45a049; 
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 }
 
-/* Optional: focus effect for accessibility */
+
 .unlock-btn:focus, #modal-submit:focus {
   outline: 2px solid #ffb6c1;
   outline-offset: 2px;
@@ -702,14 +696,14 @@ footer {
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Focus effect for better UX */
+
 #modal-input:focus {
-  border-color: #4caf50; /* green highlight */
+  border-color: #4caf50; 
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
   outline: none;
 }
 
-/* Optional placeholder styling */
+
 #modal-input::placeholder {
   color: #aaa;
   font-style: italic;
@@ -719,8 +713,8 @@ footer {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8); /* start slightly smaller */
-  background: #4caf50; /* green for success */
+  transform: translate(-50%, -50%) scale(0.8); 
+  background: #4caf50; 
   color: white;
   padding: 20px 35px;
   border-radius: 12px;
@@ -737,7 +731,7 @@ footer {
 .access-popup.show {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1); /* scale up smoothly */
+  transform: translate(-50%, -50%) scale(1); 
 }
 
 .access-popup.show {
@@ -765,10 +759,10 @@ footer {
 
 .hero-image {
   width: 100%;
-  max-width: 1200px;      /* makes it wider for big screens */
-  height: 500px;           /* taller for a more impactful landscape */
+  max-width: 1200px;     
+  height: 500px;           
   margin: 40px auto 30px;
-  overflow: hidden;        /* crop edges outside the frame */
+  overflow: hidden;        
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(255,182,193,0.3);
   position: relative;
@@ -777,8 +771,8 @@ footer {
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* fills the container proportionally */
-  object-position: center; /* keeps the main focus centered */
+  object-fit: cover;     
+  object-position: center; 
   display: block;
   transition: transform 0.5s ease;
 }
