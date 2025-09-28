@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP x KNIT Exchange Programme by Jevons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="audio-controls">
+  <audio id="bg-music" loop autoplay>
+    <source src="audio/chill.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="play-pause">⏸️</button>
+  <input id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.2">
+</div>
+  <!-- Intro Splash Screen -->
+  <div id="intro">
+    <h1>🌸 TP x KNIT Exchange Programme 🌸</h1>
+    <p>Relive our journey together by Jevons</p>
+  </div>
+
+  <header>
+    <h1>🌸 Exchange Memories 🌸</h1>
+    <p>A little memory lane from our amazing exchange programme</p>
+    <a href="personal-notes.html" class="btn personal-notes-btn">Your Personal Note 🌸</a>
+    <a href="notes.html" class="btn personal-notes-btn">Note from Jevons 🌸</a>
+  </header>
+
+  <main class="timeline">
+    <!-- Day 1 -->
+    <section class="day fade-in">
+      <h2>Day 1 – Let’s Explore Singapore!</h2>
+      <div class="photos">
+        <img src="images/KNIT_Day1.jpg" alt="Day 1">
+        <img src="images/KNIT_Day1(2).jpg" alt="Day 1">
+        <img src="images/KNIT_Day1(3).jpg" alt="Day 1">
+      </div>
+      <a href="day1.html" class="btn">View More →</a>
+    </section>
+
+    <!-- Day 2 -->
+    <section class="day fade-in">
+      <h2>Day 2 - Shop & Explore!</h2>
+      <div class="photos">
+        <img src="images/KNIT_Day2(TP).jpg" alt="Day 2">
+        <img src="images/KNIT_Day2(Boat3).jpg" alt="Day 2">
+        <img src="images/KNIT_Day2(Hotel).jpg" alt="Day 2">
+      </div>
+      <a href="day2.html" class="btn">View More →</a>
+    </section>
+
+    <!-- Day 3 -->
+    <section class="day fade-in">
+      <h2>Day 3 - Adventure & Fun!</h2>
+      <div class="photos">
+        <img src="images/KNIT_Day3(Beach2).jpg" alt="Day 3">
+        <img src="images/KNIT_Day3(Beach7).jpg" alt="Day 3">
+        <img src="images/KNIT_Day3(Universal2).jpg" alt="Day 3">
+      </div>
+      <a href="day3.html" class="btn">View More →</a>
+    </section>
+    <!-- Day 4 -->
+    <section class="day fade-in">
+      <h2>Day 4 - Sweet Goodbyes & Treats</h2>
+      <div class="photos">
+        <img src="images/KNIT_Day4(Bacha).jpg" alt="Day 4">
+        <img src="images/KNIT_Day4(Airport2).jpg" alt="Day 4">
+        <img src="images/KNIT_Day4(Airport19).jpg" alt="Day 4">
+      </div>
+      <a href="day4.html" class="btn">View More →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for my exchange friends</p>
+  </footer>
+
+  <!-- Lightbox (you can remove if not needed for index preview) -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="expanded photo">
+    <div id="caption"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

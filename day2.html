@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 - Shop & Explore!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="day-page">
+    <div id="audio-controls">
+  <audio id="bg-music" loop autoplay>
+    <source src="audio/chill.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="play-pause">⏸️</button>
+  <input id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.2">
+</div>
+  <header>
+    <h1>Day 2 - Shop & Explore!</h1>
+    <a href="index.html" class="btn">← Back to Memory Lane</a>
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <div class="slides-wrapper">
+        <div class="slide"><img src="images/KNIT_Day2(TP).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Brandy).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Orchard).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Boat).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Boat2).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Boat3).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Boat4).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Apple).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Merlion).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Dinner).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Dinner2).jpg" alt="Cultural Workshop"></div>
+        <div class="slide"><img src="images/KNIT_Day2(Hotel).jpg" alt="Cultural Workshop"></div>
+      </div>
+
+      <!-- Prev/next buttons -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+    </div>
+  </main>
+
+      <!-- Activity Highlights -->
+    <section class="activities">
+      <div class="activity-card">
+        <h3>Orchard Road 🛍️💖</h3>
+        <p>We kicked off the day shopping around Orchard! Checked out Brandy Melville and found some cute stuff. Then we stopped by a waffle ice cream store, so yummy and perfect for a little treat.</p>
+      </div>
+      <div class="activity-card">
+        <h3>Marina Bay Sands 🚤🏙️</h3>
+        <p>Next, we headed to Marina Bay Sands, explored the area, and took a fun boat ride around the mall.</p>
+      </div>
+      <div class="activity-card">
+        <h3>Merlion 🚶‍♂️🚲</h3>
+        <p>After MBS, we walked to the Merlion to snap some pics. A few of us even cycled along the way, it was fun seeing the sights from the bikes!</p>
+      </div>
+      <div class="activity-card">
+        <h3>Bugis Street & Dinner 🍣🛍️</h3>
+        <p>Back to Bugis Street for more souvenir shopping, then wrapped up the day with a cozy dinner at a Japanese restaurant.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌸 Day 2 - Shop & Explore! 🌸</p>
+  </footer>
+
+  <script src="day1.js"></script>
+</body>
+</html>

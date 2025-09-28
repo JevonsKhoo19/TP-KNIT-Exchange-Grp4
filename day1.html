@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="day-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 1 – Welcome to Temasek 🌸</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="day-page">
+    <div id="audio-controls">
+  <audio id="bg-music" loop autoplay>
+    <source src="audio/chill.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="play-pause">⏸️</button>
+  <input id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.2">
+</div>
+  <header>
+    <h1>Day 1 – Welcome to Temasek 🌸</h1>
+    <p>Gift exchange & sightseeing in Singapore</p>
+    <a href="index.html" class="btn">← Back to Memory Lane</a>
+  </header>
+
+  <main>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+      <div class="slides-wrapper">
+        <div class="slide"><img src="images/KNIT_Day1.jpg" alt="Welcome Ceremony"></div>
+        <div class="slide"><img src="images/KNIT_Day1(2).jpg" alt="Gift Exchange"></div>
+        <div class="slide"><img src="images/KNIT_Day1(3).jpg" alt="Bugis Street"></div>
+        <div class="slide"><img src="images/KNIT_Day1(HajiLane).jpg" alt="Haji Lane"></div>
+        <div class="slide"><img src="images/KNIT_Day1(PhotoBooth).jpg" alt="Tampines Mall"></div>
+        <div class="slide"><img src="images/KNIT_Day1(PhotoBooth2).jpg" alt="Tampines Mall"></div>
+        <div class="slide"><img src="images/KNIT_Day1(Bar).jpg" alt="Supertree Grove Lightshow"></div>
+        <div class="slide"><img src="images/KNIT_Day1(MBS).jpg" alt="Supertree Grove Lightshow"></div>
+        <div class="slide"><img src="images/KNIT_Day1(MBS2).jpg" alt="Supertree Grove Lightshow"></div>
+        <div class="slide"><img src="images/KNIT_Day1(Souvenir).jpg" alt="Supertree Grove Lightshow"></div>
+        <div class="slide"><img src="images/KNIT_Day1(Hotel).jpg" alt="Supertree Grove Lightshow"></div>
+      </div>
+
+      <!-- Prev/next buttons -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+
+    <!-- Activity Highlights -->
+    <section class="activities">
+      <div class="activity-card">
+        <h3>Tampines Mall 🌸🍚</h3>
+        <p>We had lunch and tried chicken rice together, うまい! Then we walked around the mall, just enjoying the start of our day.</p>
+      </div>
+      <div class="activity-card">
+        <h3>Bugis Street 🛍️🧸</h3>
+        <p>We shopped for clothes and souvenirs, then went back to the mall for even more shopping. Everyone was having so much fun picking out little things!</p>
+      </div>
+      <div class="activity-card">
+        <h3>Haji Lane 🍦📸</h3>
+        <p>We went to a photobooth, tried some ice cream, and took lots of pictures. The street was so colorful and fun to explore, かわいい！</p>
+      </div>
+      <div class="activity-card">
+        <h3>Supertree Grove 🌟🌳</h3>
+        <p>We watched the light show and walked around the supertrees. The lights were amazing, and it felt so magical just being there together.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌸 Day 1 – Welcome to Temasek 🌸</p>
+  </footer>
+
+  <script src="day1.js"></script>
+</body>
+</html>
